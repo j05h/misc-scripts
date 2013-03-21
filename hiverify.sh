@@ -2,6 +2,7 @@
 
 # bash <(curl -s https://raw.github.com/j05h/misc-scripts/master/hiverify.sh) DFW2 127.0.0.1
 # Verify HiTrust Requirements
+# See http://www.hitrustalliance.net/about/ or README.hiverify for more information
 
 
 function print_usage {
@@ -9,12 +10,14 @@ function print_usage {
 echo "Usage: ${0} [site name] <netcat remote IP]>"
   echo
 echo "Leaving netcat IP blank will give human readable output."
+  echo
 }
 
 if [ -z ${1} ]
 then
 echo "Need site name (i.e. SAN, DFW, EWR, etc)."
   print_usage
+echo
   exit 1
 fi
 

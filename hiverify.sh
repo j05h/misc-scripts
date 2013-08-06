@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# sudo -i knife ssh -x jk520u  "roles:logged" "bash <(curl -s https://raw.github.com/j05h/misc-scripts/master/hiverify.sh) IAD1 127.0.0.1"
 # bash <(curl -s https://raw.github.com/j05h/misc-scripts/master/hiverify.sh) DFW2 127.0.0.1
 # Verify HiTrust Requirements
 
